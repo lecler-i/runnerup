@@ -92,4 +92,32 @@
     <item>uk</item>
     <item>zh</item>
   </string-array>
+
+  <string-array name="generated_style_entries">
+    <item>@string/Generated_style_threshold_repeats</item>
+    <item>@string/Generated_style_norwegian_4x4</item>
+    <item>@string/Generated_style_pyramid</item>
+    <item>@string/Generated_style_descending_ladder</item>
+    <item>@string/Generated_style_mona_fartlek</item>
+  </string-array>
+
+  <integer-array name="generated_style_values" translatable="false">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+  </integer-array>
+
+  <string-array name="generated_level_entries">
+    <item>@string/Generated_level_easy</item>
+    <item>@string/Generated_level_moderate</item>
+    <item>@string/Generated_level_aggressive</item>
+  </string-array>
+
+  <integer-array name="generated_level_values" translatable="false">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+  </integer-array>
 </resources>

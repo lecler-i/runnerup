@@ -46,12 +46,63 @@
         android:text="@string/Workout"
         runnerup:type="spinner_txt" />
 
+    <TextView
+        android:id="@+id/advanced_generated_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/advanced_workout_spinner"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Generated_workout_not_saved"
+        android:visibility="gone" />
+
+    <org.runnerup.widget.TitleSpinner
+        android:id="@+id/generated_style_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/advanced_generated_banner"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:defaultValue="0"
+        android:key="@string/pref_generated_style"
+        android:text="@string/Generated_interval_style"
+        android:entries="@array/generated_style_entries"
+        android:visibility="gone"
+        runnerup:values="@array/generated_style_values" />
+
+    <org.runnerup.widget.TitleSpinner
+        android:id="@+id/generated_level_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generated_style_spinner"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:defaultValue="1"
+        android:key="@string/pref_generated_level"
+        android:text="@string/Generated_level"
+        android:entries="@array/generated_level_entries"
+        android:visibility="gone"
+        runnerup:values="@array/generated_level_values" />
+
+    <Button
+        android:id="@+id/generated_workout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generated_level_spinner"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:text="@string/Generate_from_recent_runs"
+        android:visibility="gone" />
+
     <ListView
         android:id="@+id/advanced_step_list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@id/advanced_workout_spinner"
+        android:layout_below="@id/generated_workout_button"
         android:background="@color/subsectionBg"
         android:cacheColorHint="@color/subsectionBg"
         android:clipToPadding="false"
